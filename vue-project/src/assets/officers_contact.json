@@ -1,0 +1,22 @@
+{
+    "officers": [
+        {
+            "name": "Jane Doe",
+            "position": "President",
+            "email": "jane.doe@example.com",
+            "phone": "555-123-4567"
+        },
+        {
+            "name": "John Smith",
+            "position": "Vice President",
+            "email": "john.smith@example.com",
+            "phone": "555-987-6543"
+        },
+        {
+            "name": "Bob Johnson",
+            "position": "Treasurer",
+            "email": "bob.johnson@example.com",
+            "phone": "555-555-5555"
+        }
+    ]
+}
