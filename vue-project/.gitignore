@@ -34,3 +34,6 @@ coverage
 
 # Vitest
 __screenshots__/
+
+# server, set this to ignore before going live
+# .env 
