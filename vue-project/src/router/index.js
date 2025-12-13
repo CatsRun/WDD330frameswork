@@ -3,17 +3,22 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Login from '@/views/Login.vue'
 import Contact from '@/views/Contact.vue'
-import Contact_success from '@/views/contact_success.vue'
 import Login_success from '@/views/Login_success.vue'
-// import assets from '@/assets/officers_contact.json'
+import Contact_success from '@/views/Contact_success.vue'
+import Officers from '../assets/officers_contact.json'
+// import flag_med from '../images3-flags-large.jpg'
+// import Flag_large from '../images/3-flags-large.jpg'
 
 const routes = [
     { path: '/', component: Home },
     { path: '/about', component: About },
     { path: '/login', component: Login },
     { path: '/contact', component: Contact },
+    { path: '/login_success', component: Login_success },
     { path: '/contact_success', component: Contact_success },
-    { path: '/login_success', component: Login_success }
+    { path: '/officers', component: Officers },
+    // { path: '/flag_med', component: flag_med },
+    // { path: '/flag_large', component: Flag_large }
 ]
 
 const router = createRouter({

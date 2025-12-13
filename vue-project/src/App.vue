@@ -15,10 +15,9 @@ import officers from '@/assets/officers_contact.json';
 
 <template>
   <header>
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">VFW Auxiliary 12202</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,26 +33,35 @@ import officers from '@/assets/officers_contact.json';
             <li class="nav-item">
               <router-link to="/login" class="nav-link">Login</router-link>
             </li>
+            <!-- REMOVE THIS. Only for testing -->
             <li class="nav-item">
               <router-link to="/login_success" class="nav-link">Login Successful</router-link>
-              <!-- REMOVE THIS. Only for testing -->
             </li>
             <li class="nav-item">
               <router-link to="/contact" class="nav-link">Contact</router-link>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
     </nav>
 
   </header>
-  <h1>Welcome to VFW Auxiliary 12202</h1>
-  <router-view></router-view>
+  <!-- this formats everything on the other pages because it wraps router-view -->
+  <section class="container">
+    <!-- <a>
+      <img src="/flag_med" alt="Flag" />
+    </a> -->
+    <img src="/images/3-flags-small.jpg" alt="Flag" />
+    <h1>Welcome to VFW Auxiliary 12202</h1>
 
-  <footer>
+    <!-- router-view is populated with everything on the other .vue pages if left empty -->
+    <router-view>
+    </router-view>
+  </section>
+  <footer class="card-footer">
     &copy; 2025 WDD330 class project. Angela Murray.
     <div class="footer-links">
       <ul>
@@ -72,4 +80,11 @@ import officers from '@/assets/officers_contact.json';
 
 </template>
 
-<style scoped></style>
+<style>
+/* .main-template {
+  max-width: 800px;
+  padding: 16px;
+} */
+/* used container instead */
+/* container fluid */
+</style>

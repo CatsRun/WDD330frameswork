@@ -26,7 +26,6 @@
 // **********************************************************
 // JWT functions
 // import jwt_decode from "jwt-decode";
-
 // export async function loginRequest(creds) {
 //     const options = {
 //         method: "POST",
@@ -99,11 +98,11 @@ addEventListener('load', function () {
 
 // }
 // checkLogin();
-loginRequest();
+// loginRequest();
 </script>
 
 <template>
-    <h1>Login Successful</h1>
+    <h2>Login Successful</h2>
     <p>Welcome back! You have successfully logged in.</p>
     <!-- <table> -->
     <tr>

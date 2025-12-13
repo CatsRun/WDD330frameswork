@@ -1,26 +1,65 @@
-<template>
-    <form action="Contact_success" method="get">
-        <fieldset>
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" required><br><br>
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required><br><br>
+<script setup>
+import { ref } from "vue";
 
-            <p>Are you a member?</p>
-            <input type="radio" id="memberStatus1" name="memberStatus1" value="prospectiveMember" required>
-            <label for="memberStatus1">Prospective member</label><br>
-            <input type="radio" id="memberStatus2" name="memberStatus2" value="formerMember" required>
-            <label for="memberStatus2">Current member</label><br>
-            <input type="radio" id="memberStatus3" name="memberStatus3" value="member" required>
-            <label for="memberStatus3">Former member</label><br>
-            <input type="radio" id="memberStatus4" name="memberStatus4" value="other" required>
-            <label for="memberStatus4">Other</label><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+const fname = ref("");
+const lname = ref("");
+const phone = ref("");
+const email = ref("");
+const member_status = ref("");
+
+const submitForm = () => {
+    console.log("First Name:", fname.value);
+    console.log("Last Name:", lname.value);
+    console.log("Phone:", phone.value);
+    console.log("Email:", email.value);
+    console.log("Member Status:", member_status.value);
+};
+</script>
+<template>
+    <!-- <form action="Contact_success" method="get" class="form-group"> -->
+    <form @submit.prevent="submitForm" method="get" class="form-group">
+        <fieldset>
+            <label for="fname" class=" col-form-label">First Name:</label>
+            <input type="text" class="form-control" id="fname" name="fname" v-model="fname" required><br>
+            <label for="lname" class=" col-form-label">Last Name:</label>
+            <input type="text" class="form-control" id="lname" name="lname" v-model="lname" required><br>
+            <label for="email" class=" col-form-label">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" v-model="email" required><br>
+            <label for="phone" class="col-form-label">Phone:</label>
+            <input type="tel" class="form-control" id="phone" name="phone" v-model="phone" required><br>
+
+            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" v-model="member_status" type="radio" name="gridRadios"
+                        id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                        Prospective member
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" v-model="member_status" type="radio" name="gridRadios"
+                        id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                        Current member
+                    </label>
+                </div>
+                <div class="form-check ">
+                    <input class="form-check-input" v-model="member_status" type="radio" name="gridRadios"
+                        id="gridRadios3" value="option3">
+                    <label class="form-check-label" for="gridRadios3">
+                        Former member
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" v-model="member_status" type="radio" name="gridRadios"
+                        id="gridRadios4" value="option4">
+                    <label class="form-check-label" for="gridRadios4">
+                        Other
+                    </label><br><br>
+                </div>
+
+            </div>
             <input type="submit" value="Submit">
         </fieldset>
     </form>
