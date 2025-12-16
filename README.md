@@ -38,3 +38,6 @@ npm run build
 ```
 
 <!-- Netlify https://wdd330-murray-2025.netlify.app/ -->
+
+<!-- https://byui-cit.github.io/wdd330/ponder/v3/team08.html
+added: npm install jwt-decode -->
