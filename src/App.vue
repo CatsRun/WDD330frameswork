@@ -61,7 +61,7 @@ import officers from '@/assets/officers_contact.json';
     <router-view>
     </router-view>
   </section>
-  <footer class="card-footer">
+  <footer class="card-footer container-content text-center">
     &copy; 2025 WDD330 class project. Angela Murray.
     <div class="footer-links">
       <ul>
@@ -81,10 +81,15 @@ import officers from '@/assets/officers_contact.json';
 </template>
 
 <style>
-/* .main-template {
-  max-width: 800px;
-  padding: 16px;
-} */
-/* used container instead */
-/* container fluid */
+footer {
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #f8f9fa;
+
+}
+
+footer li {
+  display: inline;
+  margin: 0 10px;
+}
 </style>
