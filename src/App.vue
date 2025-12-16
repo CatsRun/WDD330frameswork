@@ -88,6 +88,7 @@ footer {
 
 }
 
+/* test */
 footer li {
   display: inline;
   margin: 0 10px;
