@@ -1,6 +1,7 @@
 <script setup>
+// import { officers } from '@/assets/officers_contact.json';
 import { ref } from "vue";
-
+console.log(officers);
 const fname = ref("");
 const lname = ref("");
 const phone = ref("");
@@ -14,8 +15,10 @@ const submitForm = () => {
     console.log("Email:", email.value);
     console.log("Member Status:", member_status.value);
 };
+
 </script>
 <template>
+    <!-- change these to make live, chang eto sin=mple if... -->
     <!-- <form action="Contact_success" method="get" class="form-group"> -->
     <form @submit.prevent="submitForm" method="get" class="form-group">
         <fieldset>
@@ -31,32 +34,31 @@ const submitForm = () => {
             <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
             <div class="col-sm-10">
                 <div class="form-check">
-                    <input class="form-check-input" v-model="member_status" type="radio" name="gridRadios"
-                        id="gridRadios1" value="option1" checked>
+                    <input class="form-check-input" v-model="member_status" type="radio" value="Prospective member"
+                        checked>
                     <label class="form-check-label" for="gridRadios1">
                         Prospective member
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" v-model="member_status" type="radio" name="gridRadios"
-                        id="gridRadios2" value="option2">
+                    <input class="form-check-input" v-model="member_status" type="radio" value="Current member">
                     <label class="form-check-label" for="gridRadios2">
                         Current member
                     </label>
                 </div>
                 <div class="form-check ">
-                    <input class="form-check-input" v-model="member_status" type="radio" name="gridRadios"
-                        id="gridRadios3" value="option3">
+                    <input class="form-check-input" v-model="member_status" type="radio" value="Former member">
                     <label class="form-check-label" for="gridRadios3">
                         Former member
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" v-model="member_status" type="radio" name="gridRadios"
-                        id="gridRadios4" value="option4">
+                    <input class="form-check-input" v-model="member_status" type="radio" value="Other">
                     <label class="form-check-label" for="gridRadios4">
                         Other
                     </label><br><br>
+                    <!-- hidden, if filled out, do not send... -->
+                    <!-- or simple math prob with random generator,  -->
                 </div>
 
             </div>
