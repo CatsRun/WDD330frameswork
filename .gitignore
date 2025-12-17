@@ -37,3 +37,6 @@ __screenshots__/
 
 # server, set this to ignore before going live
 # .env 
+
+# I added. this give access to auth0 info
+# auth_config.json

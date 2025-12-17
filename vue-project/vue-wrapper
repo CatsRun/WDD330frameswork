@@ -1,0 +1,2 @@
+mkdir src/auth
+touch src/auth/index.js

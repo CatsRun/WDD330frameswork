@@ -56,14 +56,16 @@ import officers from '@/assets/officers_contact.json';
       <!-- <a>
       <img src="/flag_med" alt="Flag" />
     </a> -->
-      <img src="/images/3-flags-small.jpg" alt="Flag" />
-      <h1>Welcome to VFW Auxiliary 12202</h1>
-
+      <!-- <div class="hero text-center"> -->
+      <div class="hero ">
+        <img src="/images/3-flags-small.jpg" alt="Flag" />
+        <h1>Welcome to VFW Auxiliary 12202</h1>
+      </div>
       <!-- router-view is populated with everything on the other .vue pages if left empty -->
       <router-view>
       </router-view>
     </section>
-    <footer class="card-footer container-content text-center">
+    <footer class="card-footer container-content">
       &copy; 2025 WDD330 class project. Angela Murray.
       <div class="footer-links">
         <ul>
@@ -99,6 +101,7 @@ import officers from '@/assets/officers_contact.json';
 
 footer {
   margin-top: 20px;
+  margin-left: 10px;
   padding: 10px 0;
   background-color: #f8f9fa;
 
