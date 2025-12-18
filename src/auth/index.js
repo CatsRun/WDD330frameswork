@@ -1,5 +1,4 @@
-// these are erroring "The requested module '/node_modules/.vite/deps/vue.js?v=1b52333b' does not provide an export named 'default'"
-import Vue from 'vue'
+// import Vue from 'vue'
 import createAuth0Client from '@auth0/auth0-spa-js';
 
 /** Define a default action to perform after authentication */

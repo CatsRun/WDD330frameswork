@@ -1,9 +1,6 @@
 <template>
     <h2> Home page</h2>
-
-    <div>
-        <h3>Calendar</h3>
-    </div>
+    <br>
     <div>
         <h3>Upcoming Events</h3>
         <ul>
@@ -12,6 +9,7 @@
             <li>Holiday Party: <strong>December 20, 2025</strong></li>
         </ul>
     </div>
+    <br>
     <div>
         <h4>Helpful links:</h4>
         <ul>

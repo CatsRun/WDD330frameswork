@@ -1,23 +1,10 @@
 <script setup>
-// have json populate to login_success.vue
-// import { ref } from 'vue'
-
-// const officers = ref([])
-
-// fetch('/path/to/your/officers.json')
-//   .then(response => response.json())
-//   .then(data => {
-//     officers.value = data
-//   })
-import officers from '@/assets/officers_contact.json';
-
-// import jwt_decode from "jwt-decode";
 </script>
 
 <template>
   <div id="app">
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">VFW Auxiliary 12202</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -42,9 +29,6 @@ import officers from '@/assets/officers_contact.json';
               <li class="nav-item">
                 <router-link to="/contact" class="nav-link">Contact</router-link>
               </li>
-              <!-- <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li> -->
             </ul>
           </div>
         </div>
@@ -52,11 +36,7 @@ import officers from '@/assets/officers_contact.json';
 
     </header>
     <!-- this formats everything on the other pages because it wraps router-view -->
-    <section class="container">
-      <!-- <a>
-      <img src="/flag_med" alt="Flag" />
-    </a> -->
-      <!-- <div class="hero text-center"> -->
+    <section class="container container my-4 flex-grow-1 text-center max-w-3xl mx-auto">
       <div class="hero ">
         <img src="/images/3-flags-small.jpg" alt="Flag" />
         <h1>Welcome to VFW Auxiliary 12202</h1>
@@ -65,19 +45,15 @@ import officers from '@/assets/officers_contact.json';
       <router-view>
       </router-view>
     </section>
-    <footer class="card-footer container-content">
+    <footer class="footer mt-auto py-3 bg-light  card-footer container-content fixed-bottom text-center">
       &copy; 2025 WDD330 class project. Angela Murray.
       <div class="footer-links">
-        <ul>
-          <li><a href="https://malta.vfwauxiliary.org/Account/NewLogin ">MALTA</a></li>
-          <li><a href="https://vfwauxiliary.org/ ">National VFW Auxiliary</a></li>
-          <li><a href="https://vfwauxva.org/di/vfw/v2/default.asp ">Virginia VFW Auxiliary</a></li>
-        </ul>
-      </div>
-
-      <div class="more-footer-links">
-        <ul>
-          <li><a href="https://www.vafoodhandlers.com/eFoodMainReg ">Virginia Food Handlers Certification</a></li>
+        <ul class="link-dark">
+          <li><a href="https://malta.vfwauxiliary.org/Account/NewLogin " class=" link-dark">MALTA</a></li>
+          <li><a href="https://vfwauxiliary.org/ " class=" link-dark">National VFW Auxiliary</a></li>
+          <li><a href="https://vfwauxva.org/di/vfw/v2/default.asp " class=" link-dark">Virginia VFW Auxiliary</a></li>
+          <li><a href="https://www.vafoodhandlers.com/eFoodMainReg " class=" link-dark">Virginia Food Handlers
+              Certification</a></li>
         </ul>
       </div>
     </footer>
@@ -88,28 +64,24 @@ import officers from '@/assets/officers_contact.json';
 #app {
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
-  /* font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100,
-    "YTLC" 500; */
+}
+
+#app li {
+  list-style-type: none;
 }
 
 #navbarNav {
   font-weight: bold;
 }
 
-footer {
-  margin-top: 20px;
-  margin-left: 10px;
-  padding: 10px 0;
-  background-color: #f8f9fa;
-
-}
-
-/* test */
 footer li {
   display: inline;
   margin: 0 10px;
+}
+
+.form-group {
+  max-width: 500px;
+  margin: 0 auto 10rem auto;
+  text-align: left;
 }
 </style>
