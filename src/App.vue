@@ -46,7 +46,7 @@
       </router-view>
     </section>
     <footer class="footer mt-auto py-3 bg-light  card-footer container-content fixed-bottom text-center">
-      &copy; 2025 WDD330 class project. Angela Murray.
+      &copy; 2026 CSE499 Angela Murray.
       <div class="footer-links">
         <ul class="link-dark">
           <li><a href="https://malta.vfwauxiliary.org/Account/NewLogin " class=" link-dark">MALTA</a></li>
